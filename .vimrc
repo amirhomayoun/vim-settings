@@ -1,6 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "   Filename: .vimrc                                                         "
-" Maintainer: Amir H. Sadoughi						     "
+" Maintainer: Amir H. Sadoughi						                         "
 "        URL: http://github.com/amirhomayoun/dotfiles	                     "
 "                                                                            "
 "                                                                            "
@@ -10,7 +10,7 @@
 "   03. Theme/Colors ............ Colors, fonts, etc.                        "
 "   04. Vim UI .................. User interface behavior                    "
 "   05. Text Formatting/Layout .. Text, tab, indentation related             "
-"   06. Key mappings
+"   06. Key mappings                                                         "
 "   07. Plugins...................Plugin specific settings                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 

@@ -1,0 +1,90 @@
+# dotfiles
+!/.gitignore
+!/.gitmodules
+ 
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.[oa]
+*.lai
+*.la
+*.a
+*.d
+*.dd
+
+# comdb2 save files
+*.save
+*.sav
+*.done
+*.clean
+
+# vim swp files
+*.swp
+*.swo
+*.swn
+#
+# emacs
+*~
+
+# bak files
+*.bak
+*.old
+
+# tsk file
+*.tsk
+
+# Binary
+*.ppt
+*.pptx
+*.pdf
+*.doc
+*.docx
+*.zip
+*.bz2
+*.tar.gz
+*.7z
+
+#python compiled files
+*.pyc
+
+# tags files for ctags
+tags
+
+# tag files for cscope
+cscope.files
+cscope.out
+cscope.out.*
+
+# deps
+.nfs*
+00*
+ported*
+*.ibm
+*_plink_timestamp.sundev1.c
+*_plink_timestamp.ibm.c
+*_plink_timestamp_so.sundev1.c
+*_plink_timestamp_so.ibm.c
+llcalc_work*
+
+# Misc
+*.mapfile
+*.old
+*.new
+*.orig
+*.mine
+*.tmp
+*.temp
+*.flc
+
+# SVN
+.svn*
+
+# RCS
+RCS/*
