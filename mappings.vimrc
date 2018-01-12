@@ -1,8 +1,10 @@
-noremap <expr> k ((line('.')==1)?'':'k')
-noremap <expr> j ((line('.')==line('$'))?'':'j')
+" leader key
 let mapleader=","
 
-"copy/paste to external clipboard
+noremap <expr> k ((line('.')==1)?'':'k')
+noremap <expr> j ((line('.')==line('$'))?'':'j')
+
+"copy/paste to external clipboard by ctrl-c in normal mode
 nnoremap <silent> <C-c> maggvG$"+y'a
 
 "This unsets the last search pattern register by hitting return
@@ -24,6 +26,7 @@ map <F2> :e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 imap jj <Esc>
 set timeoutlen=500
 
+"Stay where you are after pressind * or #
 "map * *n
 "map # *N
 nnoremap * :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
@@ -31,17 +34,18 @@ nnoremap # :let @/='\<<C-R>=expand("<cword>")<CR>\>'<CR>:set hls<CR>
 map N Nzz
 map n nzz
 
+"Run ctags and cscope
 nmap <F11> :!ctags -R .&<CR>
           \:!find . -iname "*.c" -o -iname "*.cpp" -o -iname "*.h" -o -iname "*.hpp" > cscope.files&<CR>
           \:!cscope -b -i cscope.files -f cscope.out<CR>
           \:cscope kill -1<CR>
           \:cscope add cscope.out<CR>
 
-" Taglist keybindings
+"Taglist keybindings
 nnoremap <silent> <F8> :TlistToggle<CR>
 nnoremap <silent> <F7> :TlistOpen<CR>
 
-" Use ctrl-[hjkl] to select the active split!
+"Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
@@ -51,8 +55,11 @@ nmap <silent> <c-l> :wincmd l<CR>
 "nnoremap <silent><C-K> <C-W><C-K>:call Splitresize()<CR>
 "nnoremap <silent><C-L> <C-W><C-L>:call Splitresize()<CR>
 "nnoremap <silent><C-H> <C-W><C-H>:call Splitresize()<CR>
+
+"Make the selected split bigger
 nnoremap <leader>r :call Splitresize()<CR>
 
+"Tabularize the visual selection
 vnoremap <leader>t :Tabular<space>/
 
 " Search for selected text, forwards or backwards.
@@ -73,6 +80,8 @@ vnoremap <silent> # :<C-U>
 "Alt+] - Open the definition in a vertical split
 "map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 map <C-\> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+" Use ctrl-s to save
 noremap <silent> <C-S>          :update<CR>
 vnoremap <silent> <C-S>         <C-C>:update<CR>
 inoremap <silent> <C-S>         <C-O>:update<CR>
@@ -84,3 +93,11 @@ inoremap <silent> <C-S>         <C-O>:update<CR>
 "set equalprg=clang-format
 "autocmd FileType h,c,cpp setlocal equalprg=clang-format
 "The after/ftplugin/cpp.vim sets this now
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""Macros
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let @I = '0ct<BAEL_LOG_INFO $F<wCBAEL_LOG_END;=='
+let @W = '0ct<BAEL_LOG_WARN $F<wCBAEL_LOG_END;=='
+let @D = '0ct<BAEL_LOG_DEBUG $F<wCBAEL_LOG_END;=='
+let @E = '0ct<BAEL_LOG_ERROR $F<wCBAEL_LOG_END;=='

@@ -28,20 +28,4 @@ set backspace=indent,eol,start
 "fixdel
 "let g:pymode_paths=['/home/asadough/bin/Python-2.6.2']
 
-"this command adds -b to diff tool command line, and that only ignores trailing whitespaces.
-set diffopt+=iwhite
-
-"The 'diffexpr' option can be set to use something else than the standard diff program to compare two files
-set diffexpr=DiffW()
-set diffexpr=""
-function DiffW()
-    let opt = ""
-    if &diffopt =~ "icase"
-        let opt = opt . "-i "
-    endif
-    if &diffopt =~ "iwhite"
-        let opt = opt . "-w " " vim uses -b by default
-    endif
-    silent execute "!diff -a --binary " . opt .
-                \ v:fname_in . " " . v:fname_new .  " > " . v:fname_out
-endfunction
+source /bbsrc/princeton/skunk/vim/cursor.vim

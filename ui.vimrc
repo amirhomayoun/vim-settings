@@ -1,7 +1,7 @@
 set number                " show line numbers
-set nocul                   " highlight current line
+set nocul                 " highlight current line
 set laststatus=2          " last window always has a statusline
-set hlsearch            " Don't continue to highlight searched phrases.
+set hlsearch              " Don't continue to highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
 "set ignorecase            " Make searches case-insensitive.
 set smartcase
