@@ -13,39 +13,39 @@
 "   06. Key mappings ............ Mappings                                   "
 "   07. Plugins...................Plugin specific settings                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+:let $SETTINGS_DIR = '.vim/vim-settings'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 01. General                                                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/general.vimrc
+source $HOME/$SETTINGS_DIR/general.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 02. Events                                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/events.vimrc
+source $HOME/$SETTINGS_DIR/events.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 03. Theme/Colors                                                           "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/theme.vimrc
+source $HOME/$SETTINGS_DIR/theme.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 04. Vim UI                                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/ui.vimrc
+source $HOME/$SETTINGS_DIR/ui.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" 05. Text Formatting/Layout                                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/formatting.vimrc
+source $HOME/$SETTINGS_DIR/formatting.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Key mappings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/mappings.vimrc
+source $HOME/$SETTINGS_DIR/mappings.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 07. Plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins.vimrc
+source $HOME/$SETTINGS_DIR/plugins.vimrc

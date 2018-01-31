@@ -1,48 +1,49 @@
+:let $SETTINGS_DIR = '.vim/vim-settings'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """" MiniBufExplorer
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins/minibufexplorer.vimrc
+source $HOME/$SETTINGS_DIR/plugins/minibufexplorer.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """" Fugitive
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins/fugitive.vimrc
+source $HOME/$SETTINGS_DIR/plugins/fugitive.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """" FuzzyFinder
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins/fuzzyfinder.vimrc
+source $HOME/$SETTINGS_DIR/plugins/fuzzyfinder.vimrc
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """" Cscope
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins/cscope.vimrc
+source $HOME/$SETTINGS_DIR/plugins/cscope.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """" Airline theme
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins/airline.vimrc
+source $HOME/$SETTINGS_DIR/plugins/airline.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """" Startify
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins/startify.vimrc
+source $HOME/$SETTINGS_DIR/plugins/startify.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"SemanticHighlight
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins/semantichighlight.vimrc
+source $HOME/$SETTINGS_DIR/plugins/semantichighlight.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"YouCompleteMe
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins/youcompleteme.vimrc
+source $HOME/$SETTINGS_DIR/plugins/youcompleteme.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"Syntastic
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins/syntastic.vimrc
+source $HOME/$SETTINGS_DIR/plugins/syntastic.vimrc
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""Linediff
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-source $HOME/.vim/settings/plugins/linediff.vimrc
+source $HOME/$SETTINGS_DIR/plugins/linediff.vimrc
