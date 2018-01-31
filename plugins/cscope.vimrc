@@ -1,6 +1,6 @@
 "Look in the current directory for tags, and work up the tree towards root until one is found.
 set tags=tags;/                     "ctag
-source ~/.vim/bundle/cscope_macros/cscope_macros.vim
+"source ~/.vim/bundle/vim-cscope-macros/plugin/cscope_macros.vim
 
 
 function! LoadCscope()
