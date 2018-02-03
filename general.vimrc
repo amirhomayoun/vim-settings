@@ -28,4 +28,4 @@ set backspace=indent,eol,start
 "fixdel
 "let g:pymode_paths=['/home/asadough/bin/Python-2.6.2']
 
-source /bbsrc/princeton/skunk/vim/cursor.vim
+"source /bbsrc/princeton/skunk/vim/cursor.vim
